@@ -1,0 +1,154 @@
+:root {
+	--green: rgb(166, 247, 80);
+	--gray: rgb(225, 225, 225);
+	--grayDark: #5a6979;
+	--blue: #4f6ca0;
+}
+
+html {
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+	background-color: rgb(15, 18, 22);
+	color: white;
+}
+
+a {
+	color: var(--blue);
+}
+
+a:hover {
+	color: var(--green);
+}
+
+.green {
+	color: var(--green);
+}
+
+.gray {
+	color: var(--gray);
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+
+.header h1 {
+	text-align: center;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	flex-direction: column;
+	max-width: 400px;
+	margin: auto;
+}
+
+.nav a {
+	display: block;
+	color: white;
+	border: solid 1px #222830;
+	margin-top: -1px;
+	padding: 8px 16px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.nav a:first-child {
+	border-radius: 12px 12px 0 0;
+}
+
+.nav a:last-child {
+	border-radius: 0 0 12px 12px;
+}
+
+.nav a:hover {
+	color: var(--green);
+}
+
+.main {
+	margin: auto;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+.section {
+	padding: 40px;
+	border: solid 1px #222830;
+	background-color: #161b22;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	border-radius: 12px;
+}
+
+.section h2 {
+	color: var(--green);
+}
+
+ul li {
+	margin-bottom: 16px;
+}
+
+ul li small {
+	color: var(--grayDark);
+	display: block;
+}
+
+ul li,
+ul li a {
+	font-size: 18px;
+}
+
+p {
+	margin: 0;
+}
+
+.hero {
+	border: dotted 2px #b8af2d;
+	background-color: #0f1216;
+	color: rgb(168 154 57);
+	padding: 16px 16px;
+	margin: 20px 0;
+	border-radius: 8px;
+	font-weight: 600;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+}
+
+.badge {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	color: var(--green);
+	padding: 3px 12px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	background-color: #2f3b4a;
+	border-radius: 4px;
+}
+
+.back {
+	text-align: center;
+}
+
+h5 {
+	font-size: 18px;
+	margin: 0;
+}
+
+h6 {
+	font-size: 16px;
+	margin: 0;
+}

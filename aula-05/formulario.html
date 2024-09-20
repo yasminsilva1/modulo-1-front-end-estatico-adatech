@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <div class="container">
+    <form method="post" action="https://1f22-2804-2984-954e-800-3d-ad80-82bc-8bc6.ngrok-free.app/api/form">
+      <input type="hidden" name="token" value="123" />
+
+      <p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" required>
+      </p>
+
+      <p>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Sua idade" required>
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" value="yasminsilva@gmail.com"
+          required>
+      </p>
+
+      <p>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="***********" required>
+      </p>
+
+      <p>
+        <label for="regiao">Região:</label>
+        <select name="regiao" id="regiao">
+          <option value="" selected disabled>Selecione sua região</option>
+          <option value="norte">Norte</option>
+          <option value="nordeste">Nordeste</option>
+          <option value="centro-oeste">Centro-Oeste</option>
+          <option value="sudeste">Sudeste</option>
+          <option value="sul">Sul</option>
+        </select>
+      </p>
+
+      <p>
+      <h4>Tecnologias:</h4>
+      <label for="html">HTML</label>
+      <input type="checkbox" name="html" value="html" id="html" />
+
+      <label for="css">CSS</label>
+      <input type="checkbox" name="css" value="css" id="css" />
+
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" name="javascript" value="javascript" id="javascript" />
+      </p>
+
+      <p>
+        <label for="mensagem"></label>
+        <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+      </p>
+
+      <p>
+        <input type="color" name="cor" id="cor">
+      </p>
+
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+
+    </form>
+
+  </div>
+</body>
+
+</html>
