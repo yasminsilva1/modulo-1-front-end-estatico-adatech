@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%; /* 10px */
+}
+
+html {
+	width: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	background-color: cyan;
+	padding: 2.4rem;
+}
+
+.header h1 {
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+.menus {
+	display: flex;
+	flex-direction: column;
+	background-color: #949ccb;
+}
+
+.menus li {
+	list-style: none;
+	padding: 1.6rem 5.6rem;
+}
+
+.menus li a {
+	font-size: 1.4rem;
+	color: #865bc8;
+	text-decoration: none;
+}
+
+.menus li a:hover {
+	color: #a673f2;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.section {
+	background-color: #eee;
+	padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+}
+
+.aside {
+	background-color: #8f8f8f;
+	padding: 1.6rem;
+	flex: 1;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 2.4rem;
+}
+
+@media (min-width: 567px) {
+	.menus {
+		/* flex-direction: row;
+		flex-wrap: wrap; */
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: center;
+	}
+
+  .menus li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+	.header h1 {
+		font-size: 4rem;
+	}
+
+	.main {
+		flex-direction: row-reverse;
+	}
+}
