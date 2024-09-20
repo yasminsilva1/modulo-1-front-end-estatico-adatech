@@ -1,0 +1,173 @@
+:root {
+	font-size: 62.5%;
+	--text: #0a0403;
+	--background: #fbf4f4;
+	--primary: #c55952;
+	--secondary: #ded89d;
+	--accent: #b9d177;
+	--linearPrimarySecondary: linear-gradient(#c55952, #ded89d);
+	--linearPrimaryAccent: linear-gradient(#c55952, #b9d177);
+	--linearSecondaryAccent: linear-gradient(#ded89d, #b9d177);
+	--radialPrimarySecondary: radial-gradient(#c55952, #ded89d);
+	--radialPrimaryAccent: radial-gradient(#c55952, #b9d177);
+	--radialSecondaryAccent: radial-gradient(#ded89d, #b9d177);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 1.6rem;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	color: var(--text);
+	background-color: var(--background);
+}
+
+header {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.nav {
+	width: 80%;
+	padding: 2rem;
+	margin: 0 auto;
+}
+
+.nav .logo {
+	font-size: 3.2rem;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--primary);
+}
+
+.nav .logo:hover {
+	color: var(--secondary);
+}
+
+.nav ul {
+	gap: 3rem;
+	min-width: 30%;
+}
+
+.nav ul li a {
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: var(--text);
+	text-decoration: none;
+	background-color: var(--primary);
+	border-radius: 0.8rem;
+	padding: 1rem 2rem;
+	transition: box-shadow 0.1s ease-in-out;
+}
+
+.nav ul li a:hover {
+	background-color: var(--secondary);
+}
+
+.horizontal {
+	width: 100%;
+	height: 0.1rem;
+	background-color: var(--accent);
+}
+
+header .title {
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 4rem;
+	color: var(--text);
+}
+
+header .description {
+	text-align: center;
+	font-size: 1.4rem;
+	margin: 1rem 0 3rem;
+}
+
+.container {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.span {
+	background: var(--radialPrimarySecondary);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.container section {
+	width: 100%;
+	padding: 2rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.container section:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+#about {
+	gap: 5rem;
+}
+
+.subtitle {
+	font-size: 3.2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+#about .left-side p {
+	max-width: 50rem;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+#about .right-side img {
+	max-width: 30rem;
+	border-radius: 50%;
+}
+
+#hobby ul {
+	padding-left: 2rem;
+}
+
+#hobby ul li {
+	line-height: 1.5;
+	list-style: circle;
+}
+
+footer {
+	margin-top: 10rem;
+	width: 100%;
+	padding: 2rem;
+}
+
+footer p {
+	text-align: center;
+	font-weight: 700;
+}
